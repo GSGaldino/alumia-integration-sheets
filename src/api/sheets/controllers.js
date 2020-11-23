@@ -13,8 +13,8 @@ async function main (req, res) {
   const authClient = await authorize();
 
   const request = {
-    spreadsheetId: '1LWGV_UiId9Qw3n0ae6qAu0n8Cf-C5uBH_RJL1jcfuA8',
-    range: 'A1',
+    spreadsheetId: '1eoc0FDkoASBOQ3c9qmH8j-XPL9M1AiKzqd9_YprbXrQ',
+    range: req.query.range,
     auth: authClient,
   };
 
